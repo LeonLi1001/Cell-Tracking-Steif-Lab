@@ -5,6 +5,9 @@ This repository contains various components and scripts used in different stages
 - **env/**
   - This folder contains the Conda environment used in this project. It includes all the dependencies and packages required to run the scripts and algorithms within this repository.
 
+- **segmentation/**
+  - This folder contains scripts used for the segmentation process, which is the first step in the pipeline. It includes the necessary batch script for running segmentation on the dataset.
+
 - **Tracker/**
   - This folder includes the tracking algorithm and the post-processing scripts that are ready for use. 
 
@@ -18,12 +21,34 @@ This repository contains various components and scripts used in different stages
   - The Isolatrix folder holds all the scripts used to generate images for the Isolatrix paper. 
 
 ## Getting Started
+1. **Set Up the Segmentation Environment**
 
-1. **Set up the Environment:**
+Before proceeding with the steps below, you need to set up the segmentation environment and run the segmentation process.
+
+  - Set Up the Conda Environment:**
+  - Navigate to the `env/` directory and create the `rcnn_env` environment using the provided environment file:
+    ```bash
+    conda env create -f rcnn_env.yml
+    ```
+  - Activate the environment:
+    ```bash
+    conda activate rcnn_env
+    ```
+
+2. **Run the Segmentation Script**
+
+  - Run the Batch Script:**
+  - Navigate to the `segmentation/` folder.
+  - Execute the batch script `run_rcnn_preds_cpu.sh` to perform the segmentation:
+    ```bash
+    ./run_rcnn_preds_cpu.sh
+    ```
+
+1. **Set up the Tracking Environment:**
    - Use the environment files in the `env/` folder to recreate the Conda environment required to run the scripts. You can do this by navigating to the `env/` directory and using the command:
      ```bash
-     conda env create -f environment.yml
-     conda activate <your_env_name>
+     conda env create -f trackastra.yml
+     conda activate <trackastra>
      ```
 
 2. **Run Tracking Algorithms:**
@@ -41,6 +66,8 @@ This repository contains various components and scripts used in different stages
 ## Acknowledgments
 
 - **TRACKASTRA:** This project uses the `TRACKASTRA` package for the tracking algorithms. We would like to acknowledge the developers of `TRACKASTRA` for their work. For more information about `TRACKASTRA`, visit the [TRACKASTRA GitHub repository](https://github.com/weigertlab/trackastra).
+
+- **Segmentatino** part of the repo is done by Will Gervasio.
 
 ## Contributing
 
