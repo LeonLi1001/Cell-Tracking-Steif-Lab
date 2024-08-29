@@ -1,7 +1,8 @@
 # Segmentation
 
 This directory contains the necessary scripts and batch files to perform segmentation on your dataset. The segmentation process is the first step in the pipeline.
-The segmentation steps have been tested on gphost10. 
+
+The segmentation steps have been tested on 'gphost10'. 
 
 ## Running the Segmentation Script
 
