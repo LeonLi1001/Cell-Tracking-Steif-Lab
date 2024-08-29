@@ -44,8 +44,6 @@ This repository contains various components and scripts used in different stages
 
 ## Contributing
 
-## Contributing
-
 If you wish to contribute to this project, please follow the standard Git workflow: fork the repository, make your changes, and submit a pull request.
 
 
