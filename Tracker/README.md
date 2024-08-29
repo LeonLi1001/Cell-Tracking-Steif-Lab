@@ -64,6 +64,8 @@ While you have the flexibility to stop at any processing stage based on your ana
 - **visualizer.py:**
   - Generates visual images of the tracking results. This includes individual frame images as well as a compiled video of the tracking process.
 
+**NOTE**: Prior to developing the pipeline based on the TRACKASTRA algorithm, I have attempted to try other prebuilt models such as ACDC, EmbedTrack, and YOLO. The models performed poorly on Isolatrix images and therefore not selected. Although the models may be a good fit if we train the models with our own images.  
+
 ## Conclusion
 
 This workflow allows for a detailed and refined analysis of tracking data. Depending on the characteristics of your dataset, you can choose to analyze intermediate results or complete the entire process for the most refined output. The recommended approach is to run the full script and evaluate the final output.
