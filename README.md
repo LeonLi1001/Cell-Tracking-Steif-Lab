@@ -1,4 +1,4 @@
-This repository contains various components and scripts used in different stages of our project, from tracking algorithms to feature extraction and image generation for the Isolatrix paper.
+This repository contains various components and scripts used in different stages of our project, from tracking algorithms to feature extraction and image generation.
 
 ## Repository Structure
 
@@ -64,6 +64,7 @@ Before proceeding with the steps below, you need to set up the segmentation envi
    - The `Isolatrix_figure/` folder contains a script that was used to generate the figures for the Isolatrix paper. Run the code block to produce the required visualizations.
 
 ## Acknowledgments
+- This repository was developed in the Steif Lab under the supervision of Adi Steif. For more information, visit the [Steif Lab website](https://mavis.bcgsc.ca/labs/steif-lab).
 
 - **TRACKASTRA:** This project uses the `TRACKASTRA` package for the tracking algorithms. We would like to acknowledge the developers of `TRACKASTRA` for their work. For more information about `TRACKASTRA`, visit the [TRACKASTRA GitHub repository](https://github.com/weigertlab/trackastra).
 
