@@ -1,14 +1,14 @@
 # Conda Environment for TRACKASTRA
 
 This folder contains the conda environments used: 
- - 'trackastra.yml': was used for the tracking pipeline and all other analysis.. 
- - 'rcnn_env' was used solely for segmentation. 
+ - `trackastra.yml`: was used for the tracking pipeline and all other analysis.. 
+ - `rcnn_env` was used solely for segmentation. 
 
 ## The following outlines the usage for conda environment trackastra: 
 
 NOTE: The actual trackastra python package was edited and the edited version is in the folder '/trackastra/'. The following changes should be made if you decide to pull from the original git page. 
 
-for 'model/model.py'
+for `model/model.py`
 
   - old version line(376-377): 
     ```python
@@ -24,7 +24,7 @@ for 'model/model.py'
     else: 
       print("coords shape before min_time:  :() ", coords.shape[1])
     ```
-for 'tracking/tracking.py'
+for `tracking/tracking.py`
   - old version (line 137): 
     ```python
       pi = np.stack(pi)
