@@ -68,7 +68,7 @@ Before proceeding with the steps below, you need to set up the segmentation envi
 
 - **TRACKASTRA:** This project uses the `TRACKASTRA` package for the tracking algorithms. We would like to acknowledge the developers of `TRACKASTRA` for their work. For more information about `TRACKASTRA`, visit the [TRACKASTRA GitHub repository](https://github.com/weigertlab/trackastra).
 
-- **Segmentatino** part of the repo is done by Will Gervasio.
+- **Segmentatino** part of the repo is done by Will Gervasio, a former lab member.
 
 ## Contributing
 
