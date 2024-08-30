@@ -66,6 +66,23 @@ While you have the flexibility to stop at any processing stage based on your ana
 
 **NOTE**: Prior to developing the pipeline based on the TRACKASTRA algorithm, I have attempted to try other prebuilt models such as ACDC, EmbedTrack, and YOLO. The models performed poorly on Isolatrix images and therefore not selected. Although the models may be a good fit if we train the models with our own images.  
 
+## Output Files
+
+### 1. `man_track.txt`
+This file provides a summary of the tracking results.
+
+**Columns:**
+- **track_ID**: Unique identifier for each tracked object.
+- **start_frame**: Frame number where the track first appears.
+- **end_frame**: Frame number where the track last appears.
+- **parent_track**: ID of the parent track (if any). `0` if there is no parent track.
+
+### 2. `tif_to_img.csv`
+This file maps each TIFF file to its corresponding frame number.
+
+### 3. TIFF Files
+The output includes a series of TIFF files, one for each frame of the tracked sequence. Each file is named `man_trackXXXX.tif`, where `XXXX` is the zero-padded frame number. These TIFF files contain the tracking results, with each pixel labeled by `track_ID` or as `0` for the background.
+
 ## Conclusion
 
 This workflow allows for a detailed and refined analysis of tracking data. Depending on the characteristics of your dataset, you can choose to analyze intermediate results or complete the entire process for the most refined output. The recommended approach is to run the full script and evaluate the final output.
